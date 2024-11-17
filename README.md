@@ -1,9 +1,21 @@
-# Alo!
+# Hello! 👋  
 
-This is just some automating Setups that I made, because ***I'm buying a new PC new month*** so I just wanna have everything Setup from the click of One or Two clicks.
+This repository contains scripts for automating setups I created because ***I'm getting a new PC next month!*** My goal is to have everything ready to go with just one or two clicks.  
 
-I will guide a bit, not much because I'm the one who made this, so I already know how it works.
+Don't expect this README to be like a 30 page manual on how to use, It's just really for personal use, just figured I should make it public.  
 
-So, SetPaths.bat, is just for setting paths (Only use if you reset your paths accidentally).
+---
 
-#### This README will be updated every once in a while every commit or two.
+## Scripts Overview  
+
+### `SetPaths.bat`  
+This script is for configuring system paths. Use it if you accidentally reset your paths or need to restore them.  
+
+### `InstallStuff.bat`  
+A lightweight script for installing applications that are, let's say, *a bit nonexistent*.  
+
+---
+
+### Notes  
+- This README will be updated occasionally—roughly every commit or two.  
+- Feel free to explore and adapt these scripts to suit your needs!  
