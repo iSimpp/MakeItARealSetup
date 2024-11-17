@@ -1,23 +1,28 @@
 @echo off
 
+:: Define paths
+set "Python=C:\Users\adria_7w3sujf\AppData\Local\Programs\Python\Python312"
+set "VSCode=C:\Users\adria_7w3sujf\AppData\Local\Programs\Microsoft VS Code\bin"
+set "GCC=C:\msys64\mingw64\bin"
+set "Minecraft=C:\XboxGames\Minecraft Launcher\Content"
+set "Git=C:\Users\adria_7w3sujf\AppData\Local\Programs\Git\bin"
+set "Winget=C:\Users\adria_7w3sujf\AppData\Local\Microsoft\WindowsApps\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe"
 
-: Set each path permanently using setx
-setx Python "C:\Users\adria_7w3sujf\AppData\Local\Programs\Python\Python312"
-setx VSCode "C:\Users\adria_7w3sujf\AppData\Local\Programs\Microsoft VS Code\bin"
-setx GCC "C:\msys64\mingw64\bin"
-setx Minecraft "C:\XboxGames\Minecraft Launcher\Content"
-setx Git "C:\Users\adria_7w3sujf\AppData\Local\Programs\Git\bin"
+:: Use setx to permanently set paths
+setx Python "%Python%"
+setx VSCode "%VSCode%"
+setx GCC "%GCC%"
+setx Minecraft "%Minecraft%"
+setx Git "%Git%"
+setx Winget "%Winget%"
 
 echo Paths have been set permanently.
 
-pause
+:: Append new paths to the system PATH
+setx Path "%Path%;%Python%;%VSCode%;%GCC%;%Minecraft%;%Git%;%Winget%"
 
+:: Reflect changes for the current session
+set PATH=%PATH%;%Python%;%VSCode%;%GCC%;%Minecraft%;%Git%;%Winget%
 
-: Set the path for the current session
-
-: Set the permanent path variable
-setx Path "%Python%;%VSCode%;%GCC%;%Minecraft%;%Git%"
-
-echo Path after: %Path%
-
+echo Updated PATH for this session: %PATH%
 pause
